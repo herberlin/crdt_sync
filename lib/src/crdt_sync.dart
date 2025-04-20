@@ -23,7 +23,7 @@ typedef OnDisconnect = void Function(String peerId, int? code, String? reason);
 
 class CrdtSync {
   final bool isClient;
-  final Crdt crdt;
+  Crdt crdt;
 
   final ClientHandshakeDataBuilder? clientHandshakeDataBuilder;
   final ServerHandshakeDataBuilder? serverHandshakeDataBuilder;
